@@ -1,0 +1,90 @@
+img {
+    width: 400px;
+    height: 300px;
+    box-shadow: 3px 3px 3px #666;
+}
+footer {
+    border: solid red;
+}
+div {
+    float:inline-start;
+    padding: 5px;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+figure {
+    position: relative;
+    padding: 3px;
+    opacity: 90%;
+}
+figcaption{
+    padding: 2px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 3%;
+    top: 90%;
+    background-color: rgb(242, 242, 228);
+    border: solid black 1px;
+}
+figure:hover {
+    z-index: 1;
+    opacity: 1000%;
+    transform: scale(1.15);
+    /* transform-origin: 100% -50%; */
+    transform: rotate(10deg);
+}
+ul li {
+    list-style-type: none;
+    position: relative;
+}
+ul li figure{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    text-decoration: none;
+    list-style: none;
+    transition: transform .15s linear;
+}
+ul li:nth-child(odd) img{
+    position: relative;
+    transform: rotate(-4deg);
+}
+ul li:nth-child(even) img{
+    position: relative;
+    transform: rotate(2deg);
+}
+ul li:nth-child(3n) img{
+    transform: rotate(-6deg);
+    /* left: 90%; */
+}
+ul li:nth-child(5n) img{
+    transform: rotate(-9deg);
+}
+/* #img1{
+    left: 50%;
+    top: 10%;
+}
+#img2{
+    left: 10%;
+    top: 10%;
+}
+#img3{
+    left: 0px;
+}
+#img4{
+    left: 5%;
+    top: 10%;
+} */
+/* #img5{
+    left: 0px;
+    top: 20px;
+}
+#img6{
+    left: 10px;
+    top: 15px;
+} */
+    /* clear: left; 
+    overflow: hidden;
+    class"clear" / ostatni w sekcji */

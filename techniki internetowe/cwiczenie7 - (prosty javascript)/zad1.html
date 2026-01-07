@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cwiczenie 7</title>
+</head>
+<body>
+    <script>
+        numb = Math.floor(Math.random()*5 + 1); 
+        question = prompt("Zadaj swoje pytanie");
+        document.write(`Zadano mi pytanie: ${question}`);
+        document.write(`<br> Moja odpowiedź to: `);
+        switch (numb) {
+            case 1: document.write(`Zdecydowanie tak`);break;
+            case 2: document.write(`Oj nie byczku`);break;
+            case 3: document.write(`Zawsze jest szansa ale...`);break;
+            case 4: document.write(`A czemu nie`);break;
+            case 5: document.write(`Powiem ci tak fity-fifty...`);break;
+        }
+        console.log(numb);
+    </script>
+</body>
+</html>

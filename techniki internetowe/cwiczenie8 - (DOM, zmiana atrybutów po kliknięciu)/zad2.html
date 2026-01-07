@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylezad2.css">
+    <title>cwiczenie 8 2</title>
+</head>
+<body>
+    <h2>operacje na atrybutach</h2>
+    <div id="white"></div>
+    <button onclick="setAt()">Ustaw atrybuty</button>
+    <button onclick="setId()">Zmień id</button>
+    <button onclick="remClass()">Wyczyść</button>
+    <script>
+        function setAt() {
+            document.getElementsByTagName("div")[0].setAttribute("class","green");
+            document.getElementsByTagName("div")[0].setAttribute("style","border-radius:50%");
+        }
+        function setId() {
+            document.getElementsByTagName("div")[0].setAttribute("id","orange");
+        }
+        function remClass() {
+            document.getElementsByTagName("div")[0].removeAttribute("class");
+            document.getElementsByTagName("div")[0].removeAttribute("style");
+            document.getElementsByTagName("div")[0].setAttribute("id","white");
+        }
+    </script>
+</body>
+</html>

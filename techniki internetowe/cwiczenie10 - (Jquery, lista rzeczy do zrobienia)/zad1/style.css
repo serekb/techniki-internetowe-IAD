@@ -1,0 +1,52 @@
+#formDiv {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(210, 90, 39);
+    box-shadow: 5px 5px black;
+    position: relative;
+    left: 40%;
+}
+#container {
+    height: 300px;
+    width: 500px;
+    background-color: brown;
+    position: relative;
+    padding: 10px;
+    display: block;
+    left: 30%;
+}
+#ElementInput {
+    width: 70%;
+}
+#AddButton {
+    width: 20%;
+    background-color: rgba(81, 21, 21, 0.511);
+    color: white;
+    border-radius: 5px;
+}
+form {
+    bottom: 5%;
+    border: none;
+}
+fieldset {
+    border: none;
+}
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+li {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+/* #task {
+    visibility: hidden;
+} */

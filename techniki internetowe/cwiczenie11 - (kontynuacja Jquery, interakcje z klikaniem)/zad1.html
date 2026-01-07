@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie 11</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" ></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="small">
+    <img src="sml/i1.jpg" alt="ERROR: NO PHOTO">
+    <img src="sml/i2.jpg" alt="ERROR: NO PHOTO">
+    <img src="sml/i3.jpg" alt="ERROR: NO PHOTO">
+    <img src="sml/i4.jpg" alt="ERROR: NO PHOTO">
+    <img src="sml/i5.jpg" alt="ERROR: NO PHOTO">
+    <img src="sml/i6.jpg" alt="ERROR: NO PHOTO">
+    </div>
+    <div id="container"><img src="bg/i1.jpg" alt="ERROR: NO PHOTO"></div>
+
+    <script>
+        $(function() {
+            $('#small').on('click', 'img', function() {
+                const src = $(this).attr('src');
+                const filename = src.substring(src.lastIndexOf('/') + 1);
+                const bigSrc = 'bg/' + filename;
+            if($('#container img').attr('src') != bigSrc)
+                {
+                    $('#container img').fadeOut(100, function() {
+                        $(this).attr('src', bigSrc).fadeIn(200);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

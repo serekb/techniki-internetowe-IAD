@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie 11</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" ></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="menuGroup">
+            <div class="menuElement main1">Patent 01</div>
+            <div class="menuElement side">Patent 01</div>
+            <div class="menuElement side">Patent 01</div>
+        </div>
+        <div class="menuGroup">
+            <div class="menuElement main2">Patent 02</div>
+            <div class="menuElement side">Patent 02</div>
+            <div class="menuElement side">Patent 02</div>
+        </div>
+        <div class="menuGroup">
+            <div class="menuElement main3">Patent 03</div>
+            <div class="menuElement side">Patent 03</div>
+            <div class="menuElement side">Patent 03</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready( function() {
+            $(".main1").on('click',function() {
+                $('.menuGroup .side').not($(this).siblings('.side')).slideUp(300);
+                $(this).siblings('.side').slideDown(300);
+            });
+        });
+        $(document).ready( function() {
+            $(".main2").on('click',function() {
+                $('.menuGroup .side').not($(this).siblings('.side')).slideUp(300);
+                $(this).siblings('.side').slideDown(300);
+            });
+        });
+        $(document).ready( function() {
+            $(".main3").on('click',function() {
+                $('.menuGroup .side').not($(this).siblings('.side')).slideUp(300);
+                $(this).siblings('.side').slideDown(300);
+            });
+        });
+    </script>
+</body>
+</html>

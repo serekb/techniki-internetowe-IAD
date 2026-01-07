@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cwiczenie 10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="conatiner">
+        <div id="formDiv">
+            <h2>Lista rzeczy do zrobienia</h2>
+            <ul id="ToDoList">
+            </ul>
+        <form action="">
+            <fieldset>
+                <input type="text" name="ListElement" id="ElementInput" placeholder="Dodaj do listy">
+                <!-- <textarea name="ListElement" id="ElementInput" placeholder="Dodaj do listy"></textarea> -->
+                <button type="button" id="AddButton">Dodaj</button>
+            </fieldset>
+        </form>
+        </div>
+    </div>
+    <script>
+        $("#AddButton").on('click',function(){
+            let zadanie = $("#ElementInput").val();
+            newli1 = document.createElement( "li" ), 
+            newli1.innerHTML = zadanie;          
+            $("#ToDoList").append(newli1);
+            $("#ElementInput").val('');
+        });
+        $("#ToDoList").on('click', 'li', function(){
+            $(this).remove();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie9 zad2</title>
+    <link rel="stylesheet" href="style_zad2.css">
+</head>
+<body>
+    <div id="conatiner">
+        <h2>Tekst 1</h2>
+        <div class="active longer">Lorem ipsum dolor sit amet.</div>
+        <div class="longer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam alias officiis eaque rem quia molestias earum aut, placeat praesentium saepe repellendus quos modi, assumenda fugit? Vero molestias itaque minus reprehenderit sint tenetur quidem et, dolorum culpa deleniti suscipit asperiores quam necessitatibus odio harum ipsum quo non pariatur saepe illum odit!</div>
+        <a class="showLink" href="#">Pokaż więcej</a>
+        <h2>Tekst 2</h2>
+        <div class="active longer">Lorem ipsum.</div>
+        <div class="longer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio ab quaerat sapiente praesentium culpa ex suscipit doloremque cupiditate unde.</div>
+        <a class="showLink" href="#">Pokaż więcej</a>
+    </div>
+    <script>
+        const cla = document.querySelectorAll('.showLink')
+            cla.forEach((element) => {
+                element.addEventListener("click", function() {
+                    element.previousElementSibling.classList.toggle("active");
+                    element.previousElementSibling.previousElementSibling.classList.toggle("active");
+                    if(element.innerHTML == "Pokaż mniej")
+                        element.innerHTML = "Pokaż więcej"
+                    else if(element.innerHTML == "Pokaż więcej")
+                        element.innerHTML = "Pokaż mniej"
+                })
+            });
+        function changeClass(){
+            const cla = document.querySelectorAll('.showLink')
+            cla.forEach((element) => {
+                
+           });
+        }
+    </script>
+</body>
+</html>

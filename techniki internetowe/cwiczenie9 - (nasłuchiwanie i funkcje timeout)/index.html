@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie 9</title>
+</head>
+<body>
+    <h2>Galeria zdjec</h2>
+    <div>
+        <img id="galeria" src="img/beach.jpg" alt="No photo found">
+    </div>
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <script>
+        setInterval(changePhoto, 4000);
+        photos = ["img/beach.jpg","img/house.jpg","img/ms1.jpg","img/ms2.jpg","img/ms3.jpg","img/windmill.jpg"]
+        let i = 1;
+        function changePhoto(){
+            galeria = document.getElementById("galeria");
+            galeria.src = photos[i]
+            i++;
+            i%=6;
+        }
+    </script>
+</body>
+</html>

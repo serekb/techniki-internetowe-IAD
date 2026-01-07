@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie 8</title>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+    <button onclick="changecolors()">wyswietl tecze</button>
+    <script>
+        function changecolors() {
+        let lista = document.getElementsByTagName("div");
+        for(let i=0; i<lista.length; i++)
+        {         
+            lista[i].style.backgroundColor = lista[i].id
+        }
+    }
+    </script>
+    <style>
+        div {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+    </style>
+</body>
+</html>

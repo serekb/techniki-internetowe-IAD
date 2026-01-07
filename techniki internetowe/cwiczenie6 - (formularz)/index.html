@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenie 6 - formularze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Login Form</h4>
+    <form action="">
+            <fieldset>
+                <legend>Kontrolki wielokrotnego wyboru</legend>
+            <!-- <label class="label">Nazwa użytkownika</label>
+            <input type="text" placeholder="Wpisz nazwę użytkownika" name="uname" required>
+            <label class="label">Hasło</label>
+            <input type="password" placeholder="Wpisz hasło" name="pswd" required>
+            <buƩon type="submit">Zaloguj</buƩon>
+            <br>
+            <label>
+                <input type="checkbox" checked="checked"> Zapamiętaj mnie
+            </label> -->
+            <label class="label">Zaznacz dowolną ilość kratek<br></label>
+            <input type="checkbox" name="option1" value="Option1">Opcja 1<br>
+            <input type="checkbox" name="option2" value="Option2">Opcja 2<br>
+            <input type="checkbox" name="option3" value="Option3">Opcja 3<br>
+
+            <label class="label">Zaznacz dowolną ilość opcji z listy<br></label>
+            <select name="option" id="option" size="3" multiple>
+                <option value="Brak">Brak</option>
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Kontrolki jednokrotnego wyboru</legend>
+            <label class="label">Wybierz tylko jedną opcję<br></label>
+            <input type="radio" name="option" value="Option1" checked>Opcja 1 wybrana automatycznie<br>
+            <input type="radio" name="option" value="Option2">Opcja 2<br>
+            <input type="radio" name="option" value="Option3">Opcja 3<br>
+
+            <label class="label">Wybierz jedną opcję z listy<br></label>
+            <select name="option" id="option">
+                <option value="Brak">Brak</option>
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <option value="opcja3">Opcja 3</option>
+                <option value="opcja4">Opcja 4</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Pole tekstowe</legend>
+            <label class="label">Napisz opinię</label>
+            <textarea name="Text1" cols="40" rows="5" placeholder="Dodaj swoją opinię"></textarea>
+
+        </fieldset>
+
+        <div class="bottom">
+            <button type="submit" class="remember">Zatwierdź</button>
+            <!--<input type="reset" class="cancelbtn" value="Cancel">-->
+            <span class="psw">Zapomniałeś <a href="#">hasła?</a></span>
+        </div>
+    </form>
+</body>
+
+</html>

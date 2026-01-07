@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cwiczenie 7 v2</title>
+</head>
+<body>
+    <script>
+        rok = parseInt(prompt("Podaj rok uzytkowniku"));
+        if( rok%400 == 0)
+        {   
+            document.write("Wow, ale miałeś szczęście ten akurat jest przstępny");
+        }
+        else if (rok%4 == 0 && rok%100 != 0)
+        {
+            document.write("Rok jest przestępny super!!!");
+        }
+        else {
+            document.write("Niestety, ten rok nie jest przestępny");
+        }
+    </script>
+</body>
+</html>
